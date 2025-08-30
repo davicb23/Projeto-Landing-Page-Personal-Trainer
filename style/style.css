@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    color: #333;
+    background-color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #5a189a;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-header {
+    background: #ff7f50;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(45deg, #5a189a, #ff7f50);
+    color: white;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    margin-top: 20px;
+    background: white;
+    color: #5a189a;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    position: absolute; 
+    bottom: 20px; 
+    left: 50%;
+    transform: translateX(-50%); 
+}
+
+.sobre {
+    display: flex;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.sobre-img img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+
+.servicos {
+    padding: 40px 20px;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 220px;
+}
+
+
+.vantagens {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.beneficios {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.beneficio {
+    background: #e0bbff;
+    padding: 15px;
+    border-radius: 10px;
+    width: 220px;
+}
+
+
+.depoimentos {
+    padding: 40px 20px;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+.cards-depoimentos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.depoimento {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 300px;
+    font-style: italic;
+}
+
+.contato {
+    padding: 40px 20px;
+    background: #fff;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #5a189a;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        display: none;
+    }
+
+    .sobre {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cards, .beneficios, .cards-depoimentos {
+        flex-direction: column;
+        align-items: center;
+    }
+}
